@@ -36,7 +36,7 @@ define(	"DB_JMY_ADD_TABLA",true); //Agregar Tablas faltantes en la base de datos
 define(	"DB_HO","localhost"); //servidor
 define(	"DB_US","root"); //usuario
 define(	"DB_PA",""); //contrase�a
-define(	"DB_DB","landing"); //Base de datos
+define(	"DB_DB","pagina2"); //Base de datos
 
 
 /* Definiciones de correo */

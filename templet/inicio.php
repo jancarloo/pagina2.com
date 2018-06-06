@@ -1,245 +1,585 @@
 
- <!--===================== Sticky parallax Header =====================-->
-    <!-- Slider -->
-    <section class="slider-bg" id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 order-md-2">
-                    <div class="slider-title">
-                        <h2 class="reveal fadeInUp jmy_web_div" data-page="inicio" id="landing_titulo_slide"><?php $this->pnt('landing_titulo_slide','Create an App Landing Page. No Coding required '); ?>
-                        </h2>
-                        <p data-wow-delay="0.3s"  class="reveal fadeInUp jmy_web_div" data-page="inicio" id="landing_texto1"><?php $this->pnt('landing_texto1','You can create custom iOS and macOS apps for your business using Swift, our open source programming language. Apps that have the power to transform workflows, improve client relationships, and boost your productivity.'); ?> 
-                        </p>
-                            <a href="#" class="btn btn-primary mr-2 reveal fadeInUp" data-wow-delay="0.6s">
-                            
-                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                    <input type="hidden" name="cmd" value="_s-xclick">
-                                    <input type="hidden" name="hosted_button_id" value="RRDHS99T9CPXW">
-                                    <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
 
-
-                                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-                                </form>
-                                </a> 
-                            <?php  /* <a href="#" class="btn btn-success reveal fadeInUp" data-wow-delay="0.9s">
-                            <i class="fa fa-whatsapp mr-2" aria-hidden="true"></i>Contactar</a> */ ?>
-
-                        <p class="mt-4 text-muted reveal fadeInUp jmy_web_div" data-page="inicio" id="landing_texto2" data-wow-delay="1.2s"><?php $this->pnt('landing_texto2','Version required ios 10 or later, Android Kitkat or later'); ?></p>
-                    </div>
+        <div class="rpnsv-hdr">
+            <div class="rspnsv-lg-br">
+                <div class="logo">
+                    <h1><a href="index.html" title=""><img src="<?php $this->url_templet(); ?>images/logo.png" alt=""></a></h1>
                 </div>
-                <div class="col-md-6 order-md-1">
-                    <div class="phone-wrap reveal fadeIn"> 
-                        <img src="<?php $this->url_templet(); ?>images/adult-hand-dark.png" class="phone" alt="#">
-                        <div class="screen">
-                            <div class="screen-slider owl-carousel owl-theme">
-                                <div class="item"><img src="<?php $this->url_templet(); ?>images/screen2.png" alt="#"></div>
-                                <div class="item"><img src="<?php $this->url_templet(); ?>images/screen1.png" alt="#"></div>
-                                <div class="item"><img src="<?php $this->url_templet(); ?>images/screen3.png" alt="#"></div>
+                <span class="mnu-btn brd-rd5"><i class="fa fa-align-justify"></i></span>
+            </div>
+            <div class="rspnsv-mnu blue-bg">
+                <span class="cls-btn"><i class="fa fa-close"></i></span>
+                <ul>
+                    <li><a href="#home" title="">Home</a></li>
+                    <li><a href="#services" title="">Services</a></li>
+                    <li><a href="#about" title="">About Us</a></li>
+                    <li><a href="#team" title="">Team</a></li>
+                    <li><a href="#features" title="">Features</a></li>
+                    <li><a href="#news" title="">News</a></li>
+                    <li><a href="#contact" title="">Contact</a></li>
+                </ul>
+            </div>
+        </div><!-- Responsive Header -->
+        <section id="home">
+            <div class="gp thm-lyr opc6 nobp">
+                <div class="parlx" style="background-image: url(images/resource/sld1.jpg);"></div>
+                <img class="bg-shp rgt" src="<?php $this->url_templet(); ?>images/bg-shp1.png" alt="">
+                <div class="container">
+                    <div class="feat-wrp">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-lg-6">
+                                <div class="feat-cap">
+                                    <h2>WEBS<span>ROAD</span></h2>
+                                    <h3>Unique Landing Page & Great Mobile App</h3>
+                                    <div class="fea-btns">
+                                        <a class="brd-rd40 no-bg" href="<?php $this->url_templet(); ?>" title="">PURCHASE NOW <i class="fa fa-angle-right brd-rd50"></i></a>
+                                        <a class="brd-rd40" href="<?php $this->url_templet(); ?>" title="">APP READING <i class="fa fa-angle-right brd-rd50"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-lg-6">
+                                <div class="feat-mckp">
+                                    <img src="<?php $this->url_templet(); ?>images/resource/feat-mckp.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--//End Header -->
-    
-   
-    <!--===================== variation =====================-->
-    <section class="space light-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 center-block">
-                    <h1 class="mb-4 jmy_web_div" data-page="inicio" id="landing_divisor1_titulo">
-                    <?php $this->pnt('landing_divisor1_titulo','Perfect landing page for any App'); ?>
-                    </h1>
-
-                    <p class="mb-5 jmy_web_div" data-page="inicio" id="landing_divisor1_text">
-                    <?php $this->pnt('landing_divisor1_text','You can create custom iOS and macOS apps for your business using Swift, our open source programming language. Apps that have the power to transform workflows, improve client relationships, and boost your productivity.'); ?>
-                    </p> 
-                   <?php /* <a href="#" class="btn btn-success reveal fadeInUp" data-wow-delay="0.9s">
-                    <i class="fa fa-whatsapp mr-2" aria-hidden="true"></i>Contactar</a>*/ ?>
-
-                </div>
-            </div>
-        </div>
-    </section> 
-    <!--//End variation -->
-
-
-
-
-    <!--===================== Detailed Slider =====================-->
-    <section class="space">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 detailed-icon-wrap">
-                    <div class="detailed-block reveal fadeInLeft"> <span class="pe-primary pe-7s-server"></span>
-                        <h4 class="jmy_web_div" data-page="inicio" id="landing2_titulo1">
-                        <?php $this->pnt('landing2_titulo1','Powerful Stack'); ?>
-                        </h4>
-
-                        <p class="text-muted jmy_web_div" data-page="inicio" id="landing2_texto1">
-                        <?php $this->pnt('landing2_texto1','Conveniently redefine transparent results vis-a-vis inexpensive best practices of the tech.'); ?>   
-                        </p>
-
-                    </div>
-                    <div class="detailed-block reveal fadeInLeft" data-wow-delay="0.3s"> <span class="pe-primary pe-7s-science"></span>
-                        <div class="detailed-title">
-                            <h4 class="jmy_web_div" data-page="inicio" id="landing2_titulo2">
-                            <?php $this->pnt('landing2_titulo2','React native support'); ?></h4>
-
-                            <p class="text-muted jmy_web_div" data-page="inicio" id="landing2_texto2">
-                            <?php $this->pnt('landing2_texto2','Holisticly cultivate effective web services for leading-edge users. Completely myocardinate impactful '); ?>
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="detailed-block reveal fadeInLeft" data-wow-delay="0.6s"> <span class="pe-primary pe-7s-photo"></span>
-                        <div class="detailed-title">
-                            <h4 class="jmy_web_div" data-page="inicio" id="landing_titulo3">
-                            <?php $this->pnt('landing_titulo3','Ve a tu mercado'); ?>
-                                
-                            </h4>
-
-                            <p class="text-muted jmy_web_div" data-page="inicio" id="landing2_texto3">
-                            <?php $this->pnt('landing2_texto3','Holisticly cultivate effe'); ?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 detaled-wrap-flex">
-
-                    <div class="jmy_web_contador" data-page="inicio" id="slide2_landing" data-value="<?php $this->pnt('slide2_landing','3'); 
-                     ?>" data-titulo="Inica el número de páginas a mostrar"></div>
-
-
-                    <div class="deatiled-phone-wrap reveal fadeIn"> <img src="<?php $this->url_templet(); ?>images/detailed-screen.png" class="phone" alt="#">
-
-                    <?php 
-                        $paginas = $this->pnt('slide2_landing','3',["return"=>true]); 
-                        $contador = 0;
-                        for($i=0;$i<$paginas;$i++){ ?>
-
-                             <div class="<?php $this->pnt('slider_cat_'.$i,'_b'); ?> jmy_web_slider" id="grupo_slider<?php echo $i;?>_b" data-page="inicio" data-marco="service-box" 
-
-                                data-var='[
-                                {"type":"imagen","id":"amamos_slide<?php echo $i;?>_imagen_b","url":"<?php $this->url_templet();?>images/screen5.png"}]'>
-
-
-                                <div class="screen">
-                                    <div class="screen-slider owl-carousel owl-theme">
-                                        <div class="item">
-
-                                            <img id="amamos_slide<?php echo $i; ?>_imagen_b"
-                                            src="<?php $this->pnt('amamos_slide'.$i.'_imagen_b',$this->url_templet(['return'=>true]).'images/screen5.png' ); ?>" >
+        </section>
+        <section id="services">
+            <div class="gp gry-bg">
+                <div class="skw-shp-tp rgt"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="tlt-txt text-center">
+                                <div class="tlt-txt-innr">
+                                    <h2>Let's turn your idea into <br> a <i class="blue-clr">scalable business!</i></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ili adipiscing Donec nec eros</p>
+                                </div>
+                            </div>
+                            <div class="rmv-ext">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="fea-bx brd-rd5 text-center">
+                                            <i><img src="<?php $this->url_templet(); ?>images/resource/fea-icn1.png" alt="" /></i>
+                                            <h4>Login First</h4>
+                                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat Maecenas cenasgue ut eget secte pellentesque…</p>
                                         </div>
-
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="fea-bx brd-rd5 text-center">
+                                            <i><img src="<?php $this->url_templet(); ?>images/resource/fea-icn2.png" alt="" /></i>
+                                            <h4>Face Testing</h4>
+                                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat Maecenas cenasgue ut eget secte pellentesque…</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="fea-bx brd-rd5 text-center">
+                                            <i><img src="<?php $this->url_templet(); ?>images/resource/fea-icn3.png" alt="" /></i>
+                                            <h4>Data Analysis</h4>
+                                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat Maecenas cenasgue ut eget secte pellentesque…</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="fea-bx brd-rd5 text-center">
+                                            <i><img src="<?php $this->url_templet(); ?>images/resource/fea-icn4.png" alt="" /></i>
+                                            <h4>Unique Design</h4>
+                                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat Maecenas cenasgue ut eget secte pellentesque…</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="fea-bx brd-rd5 text-center">
+                                            <i><img src="<?php $this->url_templet(); ?>images/resource/fea-icn5.png" alt="" /></i>
+                                            <h4>Validated Code</h4>
+                                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat Maecenas cenasgue ut eget secte pellentesque…</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="fea-bx brd-rd5 text-center">
+                                            <i><img src="<?php $this->url_templet(); ?>images/resource/fea-icn6.png" alt="" /></i>
+                                            <h4>Multi Functional</h4>
+                                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat Maecenas cenasgue ut eget secte pellentesque…</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                    <?php } ?>
-                    
-                    </div>   
+                            <div class="vw-al text-center"><a class="brd-rd40 clk-scrl" href="<?php $this->url_templet(); ?>contact" title="">CONTACT US <i class="fa fa-angle-right brd-rd50"></i></a></div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-4 detailed-icon-wrap">
-                    <div class="detailed-block2 reveal fadeInRight"> <span class="pe-primary pe-7s-rocket detailed-icon2"></span>
-                            <h4 class="jmy_web_div" data-page="inicio"  id="landing2_ttitulo4">
-                            <?php $this->pnt('landing2_ttitulo4','React native support'); ?>
-                                
-                            </h4>
-
-                            <p class="text-muted jmy_web_div" data-page="inicio" id="landing2_texto4">
-                            <?php $this->pnt('landing2_texto4','Holisticly cultivate effective web services for leading-edge users. Completely myocardinate impactful '); ?>
-                            </p>
-                    </div>
-                    <div class="detailed-block2 reveal fadeInRight"> <span class="pe-primary pe-7s-medal detailed-icon2" data-wow-delay="0.3s"></span>
-                            <h4 class="jmy_web_div" data-page="inicio"  id="landing2_titulo5">
-                            <?php $this->pnt('landing2_titulo5','React native support'); ?></h4>
-
-                            <p class="text-muted jmy_web_div" data-page="inicio" id="landing2_texto5">
-                            <?php $this->pnt('landing2_texto5','Holisticly cultivate effective web services for leading-edge users. Completely myocardinate impactful '); ?>
-                            </p>
-                    </div>
-                    <div class="detailed-block2 reveal fadeInRight"> <span class="pe-primary pe-7s-edit detailed-icon2" data-wow-delay="0.6s"></span>
-                            <h4 class="jmy_web_div" data-page="inicio" id="landing2_titulo6">
-                            <?php $this->pnt('landing2_titulo6','React native support'); ?></h4>
-
-                            <p class="text-muted jmy_web_div" data-page="inicio" id="landing2_texto6">
-                            <?php $this->pnt('landing2_texto6','Holisticly cultivate effective web services for leading-edge users. Completely myocardinate impactful '); ?>
-                            </p>
-                    </div>
-                    <a href="#" class="btn btn-primary mr-2 reveal fadeInUp" data-wow-delay="0.6s">
-                    <?php /*<i class="fa fa-paypal mr-2" aria-hidden="true"></i>Paypal*/?>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="RRDHS99T9CPXW">
-                    <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-                    </form></a> 
-                </div>
+                <div class="skw-shp-bp rgt"></div>
             </div>
-        </div>
-    </section>
-
-     <!--===================== Contact =====================-->
-    <section class="space light-bg">
-        <div class="container light-bg">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="reveal fadeInUp">
-                        <form >
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <h2 class="center-block mt-4 mb-4 jmy_web_div" data-page="inicio" id="titulo_contacto">
-                            <?php $this->pnt('titulo_contacto','Contactanos'); ?></h2>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class=""> <input class="form-control jmy_web_contacto" data-formulario="contacto_inicio" data-campo="Nombre" name="name" placeholder="Nombre"> </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class=""> <input  class="form-control jmy_web_contacto" data-formulario="contacto_inicio" data-campo="Email" name="email" placeholder="Email"> </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class=""> <textarea class="form-control jmy_web_contacto" data-formulario="contacto_inicio" data-campo="Mensaje" name="message" placeholder="Message" rows="2"></textarea> </div>
-                                      <div class="text-center">
-
-                                       <button id="contacto_inicio" class="btn btn-primary mt-4 jmy_web_contacto_enviar"  data-formulario="contacto_inicio">Enviar<span class="pe-7s-angle-right-circle ml-3"></span></button>
-
-                                        
+        </section>
+        <section>
+            <div class="gp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="chs-wrp">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-lg-6">
+                                        <div class="tlt-txt">
+                                            <div class="tlt-txt-innr">
+                                                <h2>Why <i class="blue-clr">Choose US</i></h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur ili adipiscing Donec elit Donec nec eros eget adipiscing elit cenasgue ut ulricis ctetur ili adipiscing Do cenasgue ut ut eget…</p>
+                                            </div>
+                                        </div>
+                                        <div id="acordn" class="faq-wrp">
+                                            <div class="acordn-itm">
+                                                <h4>We're an awarded communication and design <i class="fa fa-arrow-down"></i></h4>
+                                                <div class="acrdn-cnt">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporo izdi dunt ut labore et dolore magna aliqua. </p>
+                                                </div>
+                                            </div>
+                                            <div class="acordn-itm">
+                                                <h4>Campaigns & Digital Projects for Businesses <i class="fa fa-arrow-down"></i></h4>
+                                                <div class="acrdn-cnt">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporo izdi dunt ut labore et dolore magna aliqua. </p>
+                                                </div>
+                                            </div>
+                                            <div class="acordn-itm">
+                                                <h4>We Design & Build Brands and Agencies <i class="fa fa-arrow-down"></i></h4>
+                                                <div class="acrdn-cnt">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporo izdi dunt ut labore et dolore magna aliqua. </p>
+                                                </div>
+                                            </div>
+                                            <div class="acordn-itm">
+                                                <h4>Large & Small Business Companies <i class="fa fa-arrow-down"></i></h4>
+                                                <div class="acrdn-cnt">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporo izdi dunt ut labore et dolore magna aliqua. </p>
+                                                </div>
+                                            </div>
+                                        </div><!-- Accordions  -->                                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-lg-6">
+                                        <div class="chr-mckp">
+                                            <img src="<?php $this->url_templet(); ?>images/resource/why-chs-mckp.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="address-block">
-                        <div class="address reveal fadeInUp"> <span class="pe-7s-map-marker"></span>
-                            <p class="jmy_web_div" data-page="inicio" id="direccion">
-                            <?php $this->pnt('direccion','481 Boston St. <br> Mountain View, CA 94043'); ?></p>
                         </div>
-                        <div class="address reveal fadeInUp" data-wow-delay="0.3s"> <span class="pe-7s-mail"></span>
-                            <p class="jmy_web_div" data-page="inicio" id="correo">
-                            <?php $this->pnt('correo','sales@appland.com <br> support@appland.com '); ?></p>
-                        </div>
-                        <div class="address reveal fadeInUp" data-wow-delay="0.6s"> <span class="pe-7s-call"></span>
-                            <p class="jmy_web_div" data-page="inicio" id="telefono">
-                            <?php $this->pnt('telefono','+1 (223) 243 1208 <br> +1 (351) 561 7041'); ?></p>
-                        </div>
-                        <ul class="reveal fadeInUp" data-wow-delay="0.9s">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--//End Contact -->
-   
-    
+        </section>
+        <section id="about">
+            <div class="gp nogp wht-lyr opc8">
+                <div class="parlx img-btm" style="background-image: url(images/parlx-bg3.png);"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="tlt-txt text-center">
+                                <div class="tlt-txt-innr">
+                                    <i><img src="<?php $this->url_templet(); ?>images/resource/icon1.png" alt=""></i>
+                                    <h2>The Best App in the Market</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ili adipiscing Donec nec eros eget cenasgue ut ultricies elit Donec nec eros eget adipiscing  elit cenasgue ut ulricis Ulimes guedolor sit amet, conse ctetur ili adipiscing Donec nec eros eget cenasgue ut ut eget…</p>
+                                </div>
+                            </div>
+                            <div class="strt-btns text-center">
+                                <a class="blue-bg brd-rd30" href="<?php $this->url_templet(); ?>" title=""><i class="fa fa-android"></i> <span><i>Available on</i> Google Store</span></a>
+                                <a class="brd-rd30" href="<?php $this->url_templet(); ?>" title=""><i class="fa fa-apple"></i> <span><i>Available on</i> Apple Store</span></a>
+                            </div>
+                            <div class="funfacts-wrp">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 col-lg-3">
+                                        <div class="fact-bx">
+                                            <i class="ion-android-open blue-clr brd-rd50"></i>
+                                            <div class="fact-bx-innr">
+                                                <h3><span class="counter">39812</span></h3>
+                                                <span>Apps Download</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-lg-3">
+                                        <div class="fact-bx">
+                                            <i class="ion-android-hand blue-clr brd-rd50"></i>
+                                            <div class="fact-bx-innr">
+                                                <h3><span class="counter">5000</span></h3>
+                                                <span>Company Clients</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-lg-3">
+                                        <div class="fact-bx">
+                                            <i class="fa fa-trophy blue-clr brd-rd50"></i>
+                                            <div class="fact-bx-innr">
+                                                <h3><span class="counter">150</span></h3>
+                                                <span>Company Awards</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-lg-3">
+                                        <div class="fact-bx">
+                                            <i class="fa fa-send-o blue-clr brd-rd50"></i>
+                                            <div class="fact-bx-innr">
+                                                <h3><span class="counter">100</span>+</h3>
+                                                <span>Complete Projects</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vdo-sec text-center">
+                                <img src="<?php $this->url_templet(); ?>images/resource/vdo-bg.jpg" alt="">
+                                <div class="vdo-sec-innr">
+                                    <i>Landing Pages Made Easy</i>
+                                    <h3>A Powerful Platform for Landing <br> Pages that Convert</h3>
+                                    <span class="lightbox"><a class="brd-rd50 blue-clr" href="https://vimeo.com/37475108" title="" data-poptrox="vimeo,800x480"><i class="fa fa-play-circle"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="gp tp320">
+                <div class="skw-shp-tp rgt"></div>
+                <img class="bg-shp cntr" src="<?php $this->url_templet(); ?>images/bg-shp2.png" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="sec-tl-wrp text-center">
+                                <div class="sec-tl-innr">
+                                    <h2>Great Screenshots</h2>
+                                    <span>Best & Clean Landing Page with Unique Idea</span>
+                                    <i class="tl-shp"><i class="tl-shp-inr"></i></i>
+                                </div>
+                            </div>
+                            <div class="app-scrn-wrp" style="background-image: url(images/resource/scrn-frm.png);">
+                                <div class="app-scrn-caro">
+                                    <div class="app-itm">
+                                        <img src="<?php $this->url_templet(); ?>images/resource/scrn1.jpg" alt="">
+                                    </div>
+                                    <div class="app-itm">
+                                        <img src="<?php $this->url_templet(); ?>images/resource/scrn2.jpg" alt="">
+                                    </div>
+                                    <div class="app-itm">
+                                        <img src="<?php $this->url_templet(); ?>images/resource/scrn3.jpg" alt="">
+                                    </div>
+                                    <div class="app-itm">
+                                        <img src="<?php $this->url_templet(); ?>images/resource/scrn4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="gp thm-lyr opc6">
+                <div class="parlx" style="background-image: url(images/parlx-bg3.jpg);"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="nws-ltr-wrp text-center">
+                                <div class="nws-ltr-inr">
+                                    <div class="nws-ltr-tl">
+                                        <i><img src="<?php $this->url_templet(); ?>images/resource/nws-ltr-icn.png" alt=""></i>
+                                        <div class="nws-ltr-tl-inr">
+                                            <h3>Subscribe Our Newsletter</h3>
+                                            <span>Sign up Here get the latest news, updates</span>
+                                        </div>
+                                    </div>
+                                    <form class="nws-ltr-frm brd-rd40">
+                                        <input class="brd-rd40" type="email" placeholder="Enter Your Email Address.....">
+                                        <button type="submit"><i class="fa fa-arrow-right"></i></button>
+                                    </form>
+                                </div>
+                            </div><!-- Newsletter Wrapper -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <div class="gp bp175">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="sec-tl-wrp text-center">
+                                <div class="sec-tl-innr">
+                                    <h2>Meet Awesome Team</h2>
+                                    <span>Best & Clean Landing Page with Unique Idea</span>
+                                    <i class="tl-shp"><i class="tl-shp-inr"></i></i>
+                                </div>
+                            </div>
+                            <div class="rmv-ext">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="membr-wrp text-center">
+                                            <div class="membr-innr">
+                                                <img src="<?php $this->url_templet(); ?>images/resource/member1.jpg" alt="" />
+                                                <div class="membr-inf">
+                                                    <h4><a href="<?php $this->url_templet(); ?>team-detail.html" title="">QLARK WILLIMES</a></h4>
+                                                    <span class="blue-clr">Co-Founder</span>
+                                                    <div class="scl-inf">
+                                                        <a href="<?php $this->url_templet(); ?>" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                                                        <a href="<?php $this->url_templet(); ?>" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                                                        <a href="<?php $this->url_templet(); ?>" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                                                        <a href="<?php $this->url_templet(); ?>" title="Vimeo" target="_blank"><i class="fa fa-vimeo"></i></a>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor uIL sit am pellen erat Maecenas cenasgue ut eget secte pellentesque…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="membr-wrp text-center">
+                                            <div class="membr-innr">
+                                                <img src="<?php $this->url_templet(); ?>images/resource/member2.jpg" alt="" />
+                                                <div class="membr-inf">
+                                                    <h4><a href="<?php $this->url_templet(); ?>team-detail.html" title="">WILLIMES JOHN</a></h4>
+                                                    <span class="blue-clr">Co-Founder</span>
+                                                    <div class="scl-inf">
+                                                        <a href="<?php $this->url_templet(); ?>" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                                                        <a href="<?php $this->url_templet(); ?>" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                                                        <a href="<?php $this->url_templet(); ?>" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                                                        <a href="<?php $this->url_templet(); ?>" title="Vimeo" target="_blank"><i class="fa fa-vimeo"></i></a>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor uIL sit am pellen erat Maecenas cenasgue ut eget secte pellentesque…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="membr-wrp text-center">
+                                            <div class="membr-innr">
+                                                <img src="<?php $this->url_templet(); ?>images/resource/member3.jpg" alt="" />
+                                                <div class="membr-inf">
+                                                    <h4><a href="<?php $this->url_templet(); ?>team-detail.html" title="">DOMINUS WATSON</a></h4>
+                                                    <span class="blue-clr">Co-Founder</span>
+                                                    <div class="scl-inf">
+                                                        <a href="<?php $this->url_templet(); ?>" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                                                        <a href="<?php $this->url_templet(); ?>" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                                                        <a href="<?php $this->url_templet(); ?>" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                                                        <a href="<?php $this->url_templet(); ?>" title="Vimeo" target="_blank"><i class="fa fa-vimeo"></i></a>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor uIL sit am pellen erat Maecenas cenasgue ut eget secte pellentesque…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vw-al text-center"><a class="brd-rd40" href="<?php $this->url_templet(); ?>team.html" title="">VIEW ALL TEAM <i class="fa fa-angle-right brd-rd50"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="features">
+            <div class="gp gry-lyr hg-opc">
+                <div class="skw-shp-tp lft"></div>
+                <div class="parlx" style="background-image: url(images/parlx-bg1.jpg);"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="amz-fea">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-6 hidden-sm-down col-lg-5">
+                                        <div class="amz-mckp"><img src="<?php $this->url_templet(); ?>images/resource/amz-mckp1.png" alt="" /></div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12 col-lg-7">
+                                        <div class="amz-tl">
+                                            <h2>XAPO <i class="blue-clr">Amazing Features</i></h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur ili adipiscing Donec nec eros eget elit Donec nec eros eget adipiscing Ulimes gue ut eget…</p>
+                                        </div>
+                                        <div class="fea-wrp">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-lg-6">
+                                                    <div class="fea-bx2">
+                                                        <i class="ion-laptop blue-clr"></i>
+                                                        <div class="fea-innr">
+                                                            <h5>HIGH RESOLUTION</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-lg-6">
+                                                    <div class="fea-bx2">
+                                                        <i class="ion-settings blue-clr"></i>
+                                                        <div class="fea-innr">
+                                                            <h5>ULTIMITED FEATURES</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-lg-6">
+                                                    <div class="fea-bx2">
+                                                        <i class="ion-person-stalker blue-clr"></i>
+                                                        <div class="fea-innr">
+                                                            <h5>FREE SUPPORT</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-lg-6">
+                                                    <div class="fea-bx2">
+                                                        <i class="ion-ios-list-outline blue-clr"></i>
+                                                        <div class="fea-innr">
+                                                            <h5>CLEAN CODES</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news">
+            <div class="gp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="sec-tl-wrp text-center">
+                                <div class="sec-tl-innr">
+                                    <h2>Recent News</h2>
+                                    <span>Best & Clean Landing Page with Unique Idea</span>
+                                    <i class="tl-shp"><i class="tl-shp-inr"></i></i>
+                                </div>
+                            </div>
+                            <div class="rmv-ext">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="rcnt-nws text-center">
+                                            <div class="rcnt-thmb">
+                                                <a href="<?php $this->url_templet(); ?>blog-detail.html" title=""><img src="<?php $this->url_templet(); ?>images/resource/rcnt-nws-img1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="nws-inf">
+                                                <div class="mta">
+                                                    <span>8 Comments</span>
+                                                    <span>245 Views</span>
+                                                </div>
+                                                <h4><a href="<?php $this->url_templet(); ?>blog-detail.html" title="">Explore These Stunning Small Business</a></h4>
+                                                <span class="pst-athr blue-clr brd-rd30">Posted by Willimes Smith</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="rcnt-nws text-center">
+                                            <div class="rcnt-thmb">
+                                                <a href="<?php $this->url_templet(); ?>blog-detail.html" title=""><img src="<?php $this->url_templet(); ?>images/resource/rcnt-nws-img2.jpg" alt=""></a>
+                                            </div>
+                                            <div class="nws-inf">
+                                                <div class="mta">
+                                                    <span>8 Comments</span>
+                                                    <span>245 Views</span>
+                                                </div>
+                                                <h4><a href="<?php $this->url_templet(); ?>blog-detail.html" title="">Boriosam sunt consectetur, assumenda provident</a></h4>
+                                                <span class="pst-athr blue-clr brd-rd30">Posted by Willimes Smith</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-lg-4">
+                                        <div class="rcnt-nws text-center">
+                                            <div class="rcnt-thmb">
+                                                <a href="<?php $this->url_templet(); ?>blog-detail.html" title=""><img src="<?php $this->url_templet(); ?>images/resource/rcnt-nws-img3.jpg" alt=""></a>
+                                            </div>
+                                            <div class="nws-inf">
+                                                <div class="mta">
+                                                    <span>8 Comments</span>
+                                                    <span>245 Views</span>
+                                                </div>
+                                                <h4><a href="<?php $this->url_templet(); ?>blog-detail.html" title="">Provident lorem amet, con sectetur Adipisicing</a></h4>
+                                                <span class="pst-athr blue-clr brd-rd30">Posted by Willimes Smith</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vw-al text-center"><a class="brd-rd40" href="<?php $this->url_templet(); ?>blog.html" title="">VIEW ALL NEWS <i class="fa fa-angle-right brd-rd50"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="gp notp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="testi-caro-wrp">
+                                <div class="testi-caro-innr">
+                                    <div class="testi-bx">
+                                        <img class="brd-rd50" src="<?php $this->url_templet(); ?>images/resource/tasti1.jpg" alt="" />
+                                        <div class="testi-bx-innr">
+                                            <p>Excepteur sint occaecat cupidtat non proident, tempor incididunt Excepteur sint occaecat cup sed do eiusmo lorimes tempor labore..</p>
+                                            <h4>THOMAS DOE</h4> <i class="blue-clr">Graphic Designer</i>
+                                        </div>
+                                    </div>
+                                    <div class="testi-bx">
+                                        <img class="brd-rd50" src="<?php $this->url_templet(); ?>images/resource/tasti2.jpg" alt="" />
+                                        <div class="testi-bx-innr">
+                                            <p>Excepteur sint occaecat cupidtat non proident, tempor incididunt Excepteur sint occaecat cup sed do eiusmo lorimes tempor labore..</p>
+                                            <h4>THOMAS DOE</h4> <i class="blue-clr">Graphic Designer</i>
+                                        </div>
+                                    </div>
+                                    <div class="testi-bx">
+                                        <img class="brd-rd50" src="<?php $this->url_templet(); ?>images/resource/tasti3.jpg" alt="" />
+                                        <div class="testi-bx-innr">
+                                            <p>Excepteur sint occaecat cupidtat non proident, tempor incididunt Excepteur sint occaecat cup sed do eiusmo lorimes tempor labore..</p>
+                                            <h4>THOMAS DOE</h4> <i class="blue-clr">Graphic Designer</i>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="gp nogp">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-lg-12">
+                        <div class="gmp" id="gmp"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="cont-wrp ovrlp-200 ovrlp-bp-200">
+                                <div class="row mrg">
+                                    <div class="col-md-4 col-sm-12 col-lg-4">
+                                        <div class="cnt-inf">
+                                            <div class="cnt-inf-tl">
+                                                <h4>GET IN TOUCH</h4>
+                                            </div>
+                                            <div class="cnt-inf-lst">
+                                                <p><span class="blue-clr">Email:</span> info@hotel.com</p>
+                                                <p><span class="blue-clr">Phone Number:</span> +34 928 514200</p>
+                                                <p><span class="blue-clr">Office Number:</span> 1 (800) 555-4453</p>
+                                                <p><span class="blue-clr">Fax:</span> +34 928 513080</p>
+                                                <p class="adr">25 Street no doky street 2440/x New Villa 14X USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-12 col-lg-8">
+                                        <form class="cnt-frm text-center">
+                                            <div class="row mrg10">
+                                                <div class="col-md-4 col-sm-4 col-lg-4"><input class="brd-rd30" type="text" Placeholder="Complete Name *" /></div>
+                                                <div class="col-md-4 col-sm-4 col-lg-4"><input class="brd-rd30" type="email" Placeholder="Email Address *" /></div>
+                                                <div class="col-md-4 col-sm-4 col-lg-4"><input class="brd-rd30" type="text" Placeholder="Subject *" /></div>
+                                                <div class="col-md-12 col-sm-12 col-lg-12"><textarea class="brd-rd30" Placeholder="Your Message *"></textarea> <button class="brd-rd30" type="submit">SEND MESSAGE</button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       

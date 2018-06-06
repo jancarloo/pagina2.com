@@ -1,41 +1,40 @@
-<!--===================== footer =====================-->
-    <footer class="space">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 center-block">
-                    <p class="jmy_web_div"  id="footer_leyenda" data-page="header" data-editor="no"> <?php $this->pnt( 'footer_leyenda','Copyright © 2017. All rights reserved. Appland Inc',["secundario"=>"header"]); ?> </p> 
-                    <?php /* <a href="<?php $this->url_inicio(); ?>#" class="jmy_web_div"  id="footer_PRESS" data-page="header" data-editor="no">
-                        <?php $this->pnt( 'footer_PRESS','PRESS',["secundario"=>"header"]); ?></a>
-                    <a  href="<?php $this->url_inicio(); ?>#" class="jmy_web_div"  id="footer_TERMS" data-page="header" data-editor="no">
-                    <?php $this->pnt( 'footer_TERMS','TERMS',["secundario"=>"header"]); ?></a>
-                    <a href="<?php $this->url_inicio(); ?>#" class="jmy_web_div"  id="footer_PRIVACY" data-page="header" data-editor="no">
-                    <?php $this->pnt( 'footer_PRIVACY','PRIVACY',["secundario"=>"header"]); ?></a> */ ?>
+ <footer>
+            <div class="gp tp315">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="ftr-wrp text-center">
+                                <div class="ftr-innr">
+                                    <h1>X<span>APO</span></h1>
+                                    <p>People who succeed have momentum. The more they succeed, the more they want to succeed, Lorimes somijes ilimes uilme silmes and the more they find a way to succeed.</p>
+                                    <span><i class="blue-clr">Copyright &copy; 2018 <a href="https://themeforest.net/user/websroad/portfolio?ref=websroad" title="Websroad" target="_blank">Websroad</a></i> | All Rights Reserved</span>
+                                    <div class="ft-scl">
+                                        <a class="facebook scl-btn brd-rd50" href="#" title="" target="_blank"><i class="fa fa-facebook"></i></a>
+                                        <a class="twitter scl-btn brd-rd50" href="#" title="" target="_blank"><i class="fa fa-twitter"></i></a>
+                                        <a class="google scl-btn brd-rd50" href="#" title="" target="_blank"><i class="fa fa-google-plus"></i></a>
+                                        <a class="vimeo scl-btn brd-rd50" href="#" title="" target="_blank"><i class="fa fa-vimeo"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!--//End footer -->
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="<?php $this->url_templet(); ?>vendors/jquery/js/jquery-3.2.1.min.js"></script>
-    <script src="<?php $this->url_templet(); ?>vendors/bootstrap/js/popper.min.js"></script>
-    <script src="<?php $this->url_templet(); ?>vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?php $this->url_templet(); ?>vendors/skrollr/skrollr.min.js"></script>
-    <script src="<?php $this->url_templet(); ?>js/script.js"></script>
-     <!-- Slick JS -->
-    <script src="<?php $this->url_templet(); ?>vendors/slick/js/slick.min.js"></script>
-    <!-- owlcarousel JS -->
-    <script src="<?php $this->url_templet(); ?>vendors/owlcarousel/js/owl.carousel.min.js"></script>
-    <!-- Wow JS (On Scroll Animation) -->
-    <script src="<?php $this->url_templet(); ?>vendors/wow.min.js"></script>
-    <!-- owlcarousel JS -->
-    <script src="<?php $this->url_templet(); ?>vendors/magnific-popup/js/magnific-popup.min.js"></script>
-    <!-- Validate JS -->
-    <script src="<?php $this->url_templet(); ?>vendors/validate.js"></script>
-    <!-- Contact JS -->
-    <script src="<?php $this->url_templet(); ?>js/contact.js"></script>
-    <!-- Script JS -->
-    <script src="<?php $this->url_templet(); ?>js/script.js"></script>
-    <?php  $this->llamar_js(); ?> 
-</body>
+        </footer>
+    </main>
 
+    <!-- Vendor: Javascripts -->
+    <script src="<?php $this->url_templet(); ?>js/jquery.min.js" type="text/javascript"></script>
+    <script src="<?php $this->url_templet(); ?>js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- Our Website Javascripts -->
+    <script src="<?php $this->url_templet(); ?>js/owl.carousel.min.js"></script>
+    <script src="<?php $this->url_templet(); ?>js/jquery.counterup.js"></script>
+    <script src="<?php $this->url_templet(); ?>js/waypoints.min.js"></script>
+    <script src="<?php $this->url_templet(); ?>js/scroll-up-bar.min.js"></script>
+    <script src="<?php $this->url_templet(); ?>js/jquery.poptrox.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4XGd9qpQIEkbfL6QpR6qk2jQ9S9_5Uww"></script>
+    <script src="<?php $this->url_templet(); ?>js/main.js"></script>
+      <?php  $this->llamar_js(); ?> 
+</body>
 </html>
