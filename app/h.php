@@ -2,8 +2,6 @@
 $DI = ($_GET['ruta']!='') ? $_GET['ruta'] : TEMPLET_HOME ;
 require(RUTA_APP."class/jmy3webCore.class.php"); $jmycore = new JMY3WEBCORE();
 require(RUTA_APP."class/token_jmy.class.php"); $jmyconect = new HiJMY();
-
-require(RUTA_APP.'vendor/PHPMailer-master/PHPMailerAutoload.php');
 if(ESTADO_WEB=='PUBLICO' || $jmycore -> acceso() ){
 	require(RUTA_APP."class/jmy3mysql.class.php"); $jmy = new JMY3MySQL();
 	require(RUTA_APP."class/jmy3webHelp.class.php"); $jmyWeb = new JMY3WEB();

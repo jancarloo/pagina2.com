@@ -45,8 +45,11 @@ class JMY3MySQL {
           $ssU[$ib] [$i]=($d['b'])? "UPDATE ".DB_PX.$d["TABLA"]." SET ID_S = '0' WHERE ID_D = '".$ac[$i]["I"]."' AND ID_F = '".$IDF[$ib]."' AND ID_S = '1' " : "UPDATE ".DB_PX.$d["TABLA"]." SET V = '".$ac[$i]["V"]."' WHERE ID_D = '".$ac[$i]["I"]."' AND ID_F = '".$IDF[$ib]."' AND ID_S = '1' ";  
         if( !$rs = $cu->query($ssU[$ib] [$i]) ){$error = "error-g-ssU".$ib.'-'.$cu->error; $ssU[$ib] [$i] =$cu->error; }}}}}
     }else{$error="Faltan Datos";}
-    return [ // "ver"=>$ver, "ssI"=>$ssI, "ssU"=>$ssU,  "ac"=>$ac, "fa"=>$fa, "ver"=>$ver, "d"=>$d, "resCol"=>$resCol, "tm"=>$tm, ,"comparando"=> $comparando
-        "colKey"=> $colKey,"col"=> $col]; 
+    return [  "ver"=>$ver, "ssI"=>$ssI, "ssU"=>$ssU,  
+              "ac"=>$ac, "fa"=>$fa, "ver"=>$ver, "d"=>$d, 
+              "resCol"=>$resCol, "tm"=>$tm,"comparando"=> $comparando,
+              "colKey"=> $colKey,"col"=> $col
+      ]; 
   }   
   public function borrar($d=[]){
     $d['ID_F']=($d['ID']!='')?$d['ID']:$d['ID_F'];

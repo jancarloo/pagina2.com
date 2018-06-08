@@ -7,27 +7,30 @@ $(document).ready(function() {
     var wSSaveTextArrDa=[];
 	$.getScript("app/js/jmy/MX-es.js",function(){});
 	var leng = {
-	guardar:"Guardar",
-	guardar_cambios:"Guardar todos los cambios",
-	hola:"hola",
-	hola:"hola",
-	imgLogo:"http://social.comsis.mx/templet/images/logo.png",
-	no_data_save:"Falta datos para poder guardar",
-	drop_image:"Arrastra aqui las imagen",
-	no_data_editable:"No hay datos editables en esta sección",
-	dato_guardado:"Dato guardado :)",
-	sin_titulo_post:"Primero ingrese el titulo del post",
-	nombre_nuevo_post:"Nombre del nuevo post",
-	seccion_comas:"Indica el nombre de cada sección separado por comas",
-	cont_cant:"Indica en número la cantidad de paginas de este elemento a mostrar",
-}
+		guardar:"Guardar",
+		guardar_cambios:"Guardar todos los cambios",
+		hola:"hola",
+		hola:"hola",
+		imgLogo:"http://social.comsis.mx/templet/images/logo.png",
+		no_data_save:"Falta datos para poder guardar",
+		drop_image:"Arrastra aqui las imagen",
+		no_data_editable:"No hay datos editables en esta sección",
+		dato_guardado:"Dato guardado :)",
+		sin_titulo_post:"Primero ingrese el titulo del post",
+		nombre_nuevo_post:"Nombre del nuevo post",
+		seccion_comas:"Indica el nombre de cada sección separado por comas",
+		cont_cant:"Indica en número la cantidad de paginas de este elemento a mostrar",
+		agregar_post:"Agregar nota en el blog",
+	}
 var style = {
 	h_guardar:"background-color:rgba(30,140,30,0.8);padding:8px;color:#fff;font-size:16px;border:0;border-radius:5px;",
 	h_cancelar:"background-color:rgba(140,30,30,0.8);padding:8px;color:#fff;font-size:16px;border:0;border-radius:5px;",
 	b_guardar:"background-color:rgba(30,140,30,0.8);padding:8px;color:#fff;font-size:16px;border:0;border-radius:5px;",
+	b_azul:"background-color:rgba(30,30,140,0.8);padding:8px;color:#fff;font-size:16px;border:0;border-radius:5px;",
+	b_cargando:"background-color:rgba(30,30,30,0.8);padding:8px;color:#fff;font-size:16px;border:0;border-radius:5px;",
 	b_cancelar:"background-color:rgba(140,30,30,0.8);padding:8px;color:#fff;font-size:16px;border:0;border-radius:5px;",
 	wS_ima:"margin:5px; width:220px; height:60px; background-color:white; border:3px dashed grey;",
-	wS_ima_h3:"margin:25px 5px; color:grey; font-size:16px; font-weight:bold;",
+	wS_ima_h3:"margin:5px 5px; color:grey; font-size:12px; font-weight:bold; text-align: center;",
 	wS_tx:"margin:5px; width:220px; height:30px; background-color:white; font-size:12px;",
 	wS_tx_in:"color:#333 !important",
 	wS_gu:"background-color:rgba(30,140,30,0.8);padding:4px;color:#fff;font-size:14px;border:0;border-radius:4px;",
@@ -43,17 +46,18 @@ var style = {
 		if (d.id != '') {
 			var v = (d.valor!=undefined)?d.valor:$("#" + d.id).html();
 			var g = {
-				"valor": v,
-				"pagina": d.page,
-				"tabla": d.tabla,
-				"opciones": {
-					"href": $("#jmy_web_href").val()
+				valor: v,
+				pagina: d.page,
+				tabla: d.tabla,
+				opciones: {
+					href: $("#jmy_web_href").val()
 				},
-				"id": d.id,
+				id: d.id,
 			};
-			if (g.href != undefined) {
-				$("#" + d.id).attr("href", g.href);
-			}
+			console.log(g);
+			if (g.opciones.href != undefined) 
+				$("#" + d.id).attr("href", g.opciones.href);
+			
 			$.ajax({
 				url: location.origin + '/jmyWebAjG',
 				type: 'post',
@@ -90,8 +94,13 @@ var style = {
 			'background-color': 'rgba(200,200,200,0.65)'
 		});
 		var href = ($("#" + d.id).attr("href") != undefined) ? $("#" + d.id).attr("href") : false;
-		var html = ''; /*if(href!==false)		//	html = html + '<input type="text" value="'+href+'" id="jmy_web_href" placeholder="href:'+data.data.id+'"> ';		*/
-		html = html + '<img src="'+leng.imgLogo+'" heigth="60"><button class="jmy_web_guardar" data-id="' + d.id + '" data-page="' + d.page + '" data-tabla="' + d.tabla + '" style="'+style.b_guardar+'">[=] '+leng.guardar+'</button><button class="jmy_web_cancelar" style="'+style.b_cancelar+'">[x]</button>';
+		var html = ''; 
+		var btne = '';
+		if(href!==false){		
+			html = html + '<input type="text" value="'+href+'" id="jmy_web_href" placeholder="href:#"> ';
+			btne = btne + '<a href="'+href+'" style="'+style.b_azul+'">[->]</a>';
+		}		
+		html = html + '<img src="'+leng.imgLogo+'" heigth="60"><button class="jmy_web_guardar" data-id="' + d.id + '" data-page="' + d.page + '" data-tabla="' + d.tabla + '" style="'+style.b_guardar+'">[=] '+leng.guardar+'</button>'+btne+'<button class="jmy_web_cancelar" style="'+style.b_cancelar+'">[x]</button>';
 		$("#jmy_web").html(html);
 		$("#jmy_web").show(250);
 		$(".jmy_web_guardar").click(function() {
@@ -109,7 +118,7 @@ var style = {
 		$("#jmy_web_tools").addClass("jmyweb-botones");
 		$("#jmy_web_tools").css({
 			'right': left + 'px',
-			'top': top + 'px',
+			'bottom': top + 'px',
 			'position': 'fixed',
 			'z-index': '100000'
 		}); 2
@@ -178,8 +187,9 @@ var style = {
 		$(".jmy_blog_guardar").click(function() {
 			var str = $("#nombre_nuevo_post").val();
 			if (str != '') {
+				var t = btoa(str);
 				var r = str.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLowerCase();
-				r = location.origin + "/blog/" + r + "/guardar";
+				r = location.origin + "/blog/" + r + "/guardar/";
 				window.location.href = r;
 			} else {
 				alert(leng.sin_titulo_post);
@@ -265,7 +275,8 @@ var style = {
     function web_slider(d=[]){	  	
     	var va=JSON.stringify(d.var);
     	var pos = (d.button=='down') ? 'bottom:5px;left:5px;':'top:5px;left:5px;';
-      	$("#"+d.id).append("<div style='z-index:10000;position:absolute;"+pos+"' id='"+d.id+"_DI'><img style='width: 66px;height: auto;' id='"+d.id+"_OP' src='http://social.comsis.mx/templet/images/logo.png' data-var='"+va+"' data-page='"+d.page+"' data-tabla='"+d.tabla+"' heigth='60'></div>");    
+    	var style = (d.style==undefined) ?  "z-index:10000;position:absolute;"+pos : d.style;
+      	$("#"+d.id).append("<div style='"+style+"' id='"+d.id+"_DI'><img style='width: 66px;height: auto;' id='"+d.id+"_OP' src='http://social.comsis.mx/templet/images/logo.png' data-var='"+va+"' data-page='"+d.page+"' data-tabla='"+d.tabla+"' heigth='60'></div>");    
       	
       	$("#"+d.id+"_OP").click(function(){
       		$(".webSliderOP").remove();
@@ -287,6 +298,7 @@ var style = {
 				"id": wSSaveTextArr[i],
 				"valor": t.val,
 				"page": t.page,
+				"tabla": t.tabla,
 			};
 			if(t.type=="text"){
 				$("#"+wSSaveTextArr[i]).html("");
@@ -312,14 +324,24 @@ var style = {
     function web_slider_OP(d=[]){
       	var h="";
       	var t=[];
+      	var t2="";
+      	var dA = 0;
       	for(var i=0;i<d.var.length;i++){
       		t=d.var[i];
+      		t2="";
       		switch (t.type) {
 			    case 'imagen':
-			        h=h+'<div id="drop-area" data-id_target="'+t.id+'" data-page="'+d.page+'" data-tabla="'+d.tabla+'" style="'+style.wS_ima+'"><h3 class="drop-text" style="'+style.wS_ima_h3+'">'+leng.drop_image+'</h3></div>';
+			    	if(t.width!=undefined) 
+			    		t2 = t2+"<br> w: "+t.width;
+
+			    	if(t.width!=undefined) 
+			    		t2 = t2+" h: "+t.height;
+
+			        h=h+'<div class="drop-area" data-id_target="'+t.id+'" data-class="'+t.class+'" data-page="'+d.page+'" data-idadd="'+t.idadd+'" data-tabla="'+d.tabla+'" data-width="'+t.width+'" data-height="'+t.height+'" style="'+style.wS_ima+'" ><h3 class="drop-text" style="'+style.wS_ima_h3+'">'+leng.drop_image+' '+t2+'</h3></div>';
+			        dA++;
 			    break;
 			    case 'text':
-			        h=h+'<div style="'+style.wS_tx+'"><input data-page="'+d.page+'" data-tabla="'+d.tabla+'" type="text" placeholder="'+t.placeholder+'" value=""  id="'+t.id+'" data-id_target="'+t.id+'" class="wSSaveText" style="'+style.wS_tx_in+'"></div>';
+			        h=h+'<div style="'+style.wS_tx+'"><input data-page="'+d.page+'" data-tabla="'+d.tabla+'" type="text" placeholder="'+t.placeholder+'" value="'+t.value+'"  id="'+t.id+'" data-id_target="'+t.id+'" class="wSSaveText" style="'+style.wS_tx_in+'"></div>';
 			    break;
 			}
       	}
@@ -346,23 +368,30 @@ var style = {
       		var wSSaveTextArr=[];
       		$(".webSliderOP").remove();
       	});
-      	$("#drop-area").on('dragenter', function (e){
+
+      	$(".drop-area").on('dragenter', function (e){
 			e.preventDefault();
 			$(this).css('background', '#BBD5B8');
 		});
 
-		$("#drop-area").on('dragover', function (e){
+		$(".drop-area").on('dragover', function (e){
 			e.preventDefault();
 		});
 
-		$("#drop-area").on('drop', function (e){
+		$(".drop-area").on('drop', function (e){
 			$(this).css('background', '#D8F9D3');
 			e.preventDefault();
 			var im = e.originalEvent.dataTransfer.files;
 			uImage(im,{	id:$(this).data('id_target'),
 						page:$(this).data('page'),
-						tabla:$(this).data('tabla')	});
+						tabla:$(this).data('tabla'),
+						idadd:$(this).data('idadd'),
+						height:$(this).data('height'),
+						width:$(this).data('width')	,
+						class:$(this).data('class')	,
+						porcional:$(this).data('porcional')	});
 		});
+		
 
      }
 
@@ -374,8 +403,13 @@ var style = {
 
 	function uForm(formData,d=[]){
 		d.tabla=(d.tabla=="undefined")?"":d.tabla;
+		console.log(d);
+		$(".jmy_slider_guardar").prop('disabled', true);
+		$(".jmy_slider_guardar").css(style.b_cargando);
+
+		$(".jmy_slider_guardar").html('Cargando imagen...');
 		$.ajax({
-			url: "/jmyWebUpLoIm",
+			url: "/jmyWebUpLoIm/width-"+d.width+"/height-"+d.height+"/",
 			type: "POST",
 			data: formData,
 			contentType:false,
@@ -385,15 +419,23 @@ var style = {
 			success: function(r){
 				console.log(r);			
 				r.url =(r.url!=undefined)?r.url:r.val;
-				var h = '<img width="45%" src="../'+r.url+'">';
+
+				$(".jmy_slider_guardar").prop('disabled', false);
+				$(".jmy_slider_guardar").html('[+ Guardar]');
+				$(".jmy_slider_guardar").css(style.b_guardar);
+				var h = '<img width="45%" src="'+r.url+'">';
 				$('#drop-area').html(h);
 				console.log(d);
-				$("#"+d.id).attr("src",'../'+r.url);
+				$("#"+d.id).attr("src",r.url);
+				if(d.idadd!=undefined)
+					$("#"+d.idadd).attr("src",r.url);
+				if(d.class!=undefined)
+					$("."+d.class).attr("src",r.url);
 				addGuardarSlider({	id:d.id,
 									id_target:d.id,
       								tabla:d.tabla,
       								page:d.page,
-      								val:'../'+r.url,
+      								val:r.url,
       							});
 		},error: function(result) {
 			console.log(result);
@@ -410,8 +452,33 @@ var style = {
 	            tabla: $(this).data("tabla"),
 	            var: $(this).data("var"),
 	            marco: $(this).data("marco"),
+	            style: $(this).data("style"),
 	            button: $(this).data("button")
 	        });
+		});
+	}
+
+	function img_op(){
+		var h='';
+		var t='';
+		var b=[];
+		$(".jmy_web_img").each(function() {
+			 d = {
+						"tabla":$(this).data("tabla"),
+						"page":$(this).data("page"),
+						"var":$(this).data("var"),
+			};
+			h='';
+			h = '<div style="background-color:rgba(30,170,30,0.7);padding:4px;font-size:16px;color:fcfcfc;border-radius:5px">';
+				for (var i = 0; i < d.var.length; i++) {
+					t = d.var[i];
+					h = h+t.id;
+				}
+			h = h+'</div>';
+			$(this).html('');	
+			$(this).show(250);	
+			console.log(h);
+			//$(this).html(h);				
 		});
 	}
 
@@ -420,6 +487,11 @@ var style = {
 			if ($(this).data('editor') != 'no') $(this).attr("contenteditable", "true");
 			else console.log(this);
 		});
+		//img_op();
+		cargaSlider();
+		html_contador();
+		html_categorias();
+		msk_add_blog();
 	}
 	$("#jmy_web").draggable({
 		cursor: "move",
@@ -429,10 +501,5 @@ var style = {
 		}
 	});
 
-
 	carga();
-	cargaSlider();
-	html_contador();
-	html_categorias();
-	msk_add_blog();
 });

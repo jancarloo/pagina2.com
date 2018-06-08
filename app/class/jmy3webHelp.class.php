@@ -16,6 +16,7 @@ class JMY3WEB extends JMY3MySQL{
 
   	parent::db([$tabla]); // Verificamos que exista la tabla, de nos er así el sistema la crea
   }
+  	public function modoEditor(){ global $modoEdicion; return $modoEdicion; }
 	public function url_templet($d=[]){ if($d['return']){ return RUTA_ACTUAL.BASE_TEMPLET; }else{echo RUTA_ACTUAL.BASE_TEMPLET;} }
 	public function url_inicio($d=[]){ if($d['return']){ return RUTA_ACTUAL; }else{echo RUTA_ACTUAL;}  }
   
@@ -124,8 +125,8 @@ class JMY3WEB extends JMY3MySQL{
 		global $modoEdicion;
 		$data = $d["data"];
 		if($modoEdicion){			
-			$this->cargar_js(['url'=>BASE_APP.'js/ckeditorN/ckeditor.js']); // funciones jmy 
-			$this->cargar_js(['url'=>BASE_APP.'js/ckeditorN/adapters/jquery.js']); // funciones jmy 
+			$this->cargar_js(['url'=>BASE_APP.'js/ckeditor/ckeditor.js']); // funciones jmy 
+			$this->cargar_js(['url'=>BASE_APP.'js/ckeditor/adapters/jquery.js']); // funciones jmy 
 			$this->cargar_js(['url'=>'https://code.jquery.com/ui/1.12.1/jquery-ui.js']); // funciones jmy 
 			$this->cargar_js(['url'=>BASE_APP.'js/jmy/jmyWeb.js']); // funciones jmy 
 		}

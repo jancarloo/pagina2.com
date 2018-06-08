@@ -18,12 +18,16 @@
     <link rel="stylesheet" href="<?php $this->url_templet(); ?>css/responsive.css" type="text/css">
 </head>
 <body>
+
+    <div id="jmy_web"></div>
+    <div id="jmy_web_tools"></div>
+
     <!-- Our Website Content Goes Here -->
     <main>
         <header class="stck">
             <div class="container">
                 <div class="mnu-sc">
-                    <div class="logo">
+                    <div class="logo ">
                         <h1><a href="<?php $this->url_templet(); ?>index.html" title=""><img src="images/logo.png" alt="" itemprop="image"></a></h1>
                     </div>
                     <nav class="one-page-func">
@@ -34,13 +38,20 @@
                             <a class="brd-rd50" href="#" title=""><i class="fa fa-vimeo"></i></a>
                         </div>
                         <ul>
-                            <li><a href="#home" title="">Home</a></li>
-                            <li><a href="#services" title="">Services</a></li>
-                            <li><a href="#about" title="">About Us</a></li>
-                            <li><a href="#team" title="">Team</a></li>
-                            <li><a href="#features" title="">Features</a></li>
-                            <li><a href="#news" title="">News</a></li>
-                            <li><a href="#contact" title="">Contact</a></li>
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="#home" title=""><?php $this->pnt('enlace_inicio','Inicio ',["secundario"=>"header"]); ?></a></li>
+                             
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_servicio" data-editor="no" href="#services" title=""><?php $this->pnt('enlace_servicio','Servicio ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_sobre" data-editor="no" href="#about" title=""><?php $this->pnt('enlace_sobre','Sobre nosotros ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_equipo" data-editor="no" href="#team" title=""><?php $this->pnt('enlace_equipo','Equipo ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_trabajo" data-editor="no" href="#features" title=""><?php $this->pnt('enlace_trabajo','Trabajo ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_nuevo" data-editor="no" href="#new" title=""><?php $this->pnt('enlace_nuevo','Nuevo ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_contacto" data-editor="no" href="#contact" title=""><?php $this->pnt('enlace_contacto','Contacto ',["secundario"=>"header"]); ?></a> </li>
+
                         </ul>
                     </nav>
                 </div>

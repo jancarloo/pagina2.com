@@ -127,19 +127,31 @@ if(is_array($_FILES)){
   }
 	
 	if(is_uploaded_file($_FILES['userImage']['tmp_name'])) {
+
+    $op = explode("/", $_GET['peticion']);
+    $op2 = [];
+    for ($i=0; $i <count($op) ; $i++) { 
+      $t=explode("-",$op[$i]);
+      $op2[$t[0]] = $t[1];
+    }
+
+   $op=["height"=>($op2['height']!='')?$op2['height']:IMG_RESIZING_HEIGHT,
+        "width"=>($op2['width']!='')?$op2['width']:IMG_RESIZING_WIDTH,
+        "porcional"=>($op2['porcional']==true)?$op2['porcional']:false,
+      ];
 		$sourcePath = $_FILES['userImage']['tmp_name'];
-		$targetPath = BASE_ARCHIVO.$_FILES['userImage']['name'];
+		$targetPath = BASE_ARCHIVO.$op['width'].'x'.$op['height'].'_'.$_FILES['userImage']['name'];
     if (!file_exists(BASE_ARCHIVO)) {
         mkdir(BASE_ARCHIVO, 0777, true);
     }
 		if(move_uploaded_file($sourcePath,$targetPath)) {
 			//call the function (when passing path to pic)
       if(IMG_RESIZING){
-        $porcional = (IMG_RESIZING_HEIGHT==0)?true:false;
-        smart_resize_image($targetPath , null, IMG_RESIZING_WIDTH , IMG_RESIZING_HEIGHT , $porcional , $targetPath , false , false ,90 );
+        
+        smart_resize_image($targetPath , null, $op['width'] , $op['height'] , $op['porcional']  , $targetPath , false , false ,90 );
           }
 
-          echo json_encode(["url"=>$targetPath]);
+          echo json_encode(["url"=>RUTA_ACTUAL.$targetPath,"get"=>$_GET,"op"=>$op]);
 		exit();
 		}
 	}else{
