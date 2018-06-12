@@ -13,6 +13,15 @@
                                         <a class="twitter scl-btn brd-rd50" href="#" title="" target="_blank"><i class="fa fa-twitter"></i></a>
                                         <a class="google scl-btn brd-rd50" href="#" title="" target="_blank"><i class="fa fa-google-plus"></i></a>
                                         <a class="vimeo scl-btn brd-rd50" href="#" title="" target="_blank"><i class="fa fa-vimeo"></i></a>
+
+                                        <a href="<?php 
+		                      $this->pnt( 'footer_disenadopor_href', '#', ["secundario"=>"footer"] ); 
+							?>" title="" class="disenado jmy_web_div" id="footer_disenadopor" data-page="footer" data-editor="no"><?php 
+		                      $this->pnt( 'footer_disenadopor',
+										  'Comsis',
+										  ["secundario"=>"footer"]
+								); 
+							?></a>
                                     </div>
                                 </div>
                             </div>

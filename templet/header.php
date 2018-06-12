@@ -32,10 +32,25 @@
                     </div>
                     <nav class="one-page-func">
                         <div class="hdr-scl">
-                            <a class="brd-rd50" href="#" title=""><i class="fa fa-facebook"></i></a>
-                            <a class="brd-rd50" href="#" title=""><i class="fa fa-twitter"></i></a>
-                            <a class="brd-rd50" href="#" title=""><i class="fa fa-google-plus"></i></a>
-                            <a class="brd-rd50" href="#" title=""><i class="fa fa-vimeo"></i></a>
+
+                           
+                            <a  
+                            href="<?php 
+                              $this->pnt('header_facebook_href', '#', ["secundario"=>"footer"] ); 
+                            ?>" class="brd-rd50 jmy_web_div"  id="header_faic_inicio" data-page="footer" data-editor="no"  >
+                            <?php $this->pnt('header_faic_inicio',
+                            '<i class="fa fa-facebook"></i>',
+                            ["secundario"=>"footer"]
+                            ); 
+
+                            
+                            ?></a>    
+
+                            <?php /*<a class="brd-rd50 jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="" title=""><i class="fa fa-twitter"></i></a>
+
+                            <a class="brd-rd50 jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="" title=""><i class="fa fa-google-plus"></i></a>
+
+                            <a class="brd-rd50 jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="" title=""><?php $this->pnt('enlace_inicio','Inicio ',["secundario"=>"header"]); </a> */?>
                         </div>
                         <ul>
                             <li><a class="jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="#home" title=""><?php $this->pnt('enlace_inicio','Inicio ',["secundario"=>"header"]); ?></a></li>

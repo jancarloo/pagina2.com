@@ -1,5 +1,4 @@
 
-
         <div class="rpnsv-hdr">
             <div class="rspnsv-lg-br">
                 <div class="logo">
@@ -10,13 +9,19 @@
             <div class="rspnsv-mnu blue-bg">
                 <span class="cls-btn"><i class="fa fa-close"></i></span>
                 <ul>
-                    <li class="jmy_web_div" data-page="inicio" id="enlace_inicio"><?php $this->pnt('enlace_inicio','<a href="#home" title="">Home</a> '); ?></li>
-                    <li class="jmy_web_div" data-page="inicio" id="enlace_servicio"><?php $this->pnt('enlace_servicio','<a href="#services" title="">Services</a>'); ?></li>
-                    <li class="jmy_web_div" data-page="inicio" id="enlace_sobre"><?php $this->pnt('enlace_sobre','<a href="#about" title="">About Us</a>'); ?></li>
-                    <li class="jmy_web_div" data-page="inicio" id="enlace_equipo"><?php $this->pnt('enlace_equipo','<a href="#team" title="">Team</a>'); ?></li>
-                    <li class="jmy_web_div" data-page="inicio" id="enlace_trabajo"><?php $this->pnt('enlace_trabajo','<a href="#features" title="">Features</a>'); ?></li>
-                    <li class="jmy_web_div" data-page="inicio" id="enlace_nuevo"><?php $this->pnt('enlace_nuevo','<a href="#news" title="">News</a>'); ?></li>
-                    <li class="jmy_web_div" data-page="inicio" id="enlace_contacto"><?php $this->pnt('enlace_contacto','<a href="#contact" title="">Contact</a>'); ?></li>
+                    <li><a class="jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="#home" title=""><?php $this->pnt('enlace_inicio','Inicio ',["secundario"=>"header"]); ?></a></li>
+                             
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_servicio" data-editor="no" href="#services" title=""><?php $this->pnt('enlace_servicio','Servicio ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_sobre" data-editor="no" href="#about" title=""><?php $this->pnt('enlace_sobre','Sobre nosotros ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_equipo" data-editor="no" href="#team" title=""><?php $this->pnt('enlace_equipo','Equipo ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_trabajo" data-editor="no" href="#features" title=""><?php $this->pnt('enlace_trabajo','Trabajo ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_nuevo" data-editor="no" href="#new" title=""><?php $this->pnt('enlace_nuevo','Nuevo ',["secundario"=>"header"]); ?></a> </li>
+
+                            <li><a class="jmy_web_div" data-page="header" id="enlace_contacto" data-editor="no" href="#contact" title=""><?php $this->pnt('enlace_contacto','Contacto ',["secundario"=>"header"]); ?></a> </li>
                 </ul>
             </div>
         </div><!-- Responsive Header -->
@@ -30,8 +35,8 @@
                             <div class="col-md-6 col-sm-12 col-lg-6">
                                 <div class="feat-cap">
                                     <h2 class="jmy_web_div" data-page="inicio" id="inicio_titulo1"><?php $this->pnt('inicio_titulo1','WEBS<span>ROAD</span>'); ?> </h2>
-                                    <h3 class="jmy_web_div" data-page="inicio" id="inicio_text2"><?php $this->pnt('inicio_text2',' Unique Landing Page & Great Mobile App'); ?></h3>
-                                    <div class="fea-btns">
+                                    <h3 class="jmy_web_div" data-page="inicio" id="inicio_text"><?php $this->pnt('inicio_text',' Unique Landing Page & Great Mobile App'); ?></h3>
+                                    <div class="fea-btns jmy_web_div" data-page="inicio" id="inicio_text1">
                                         <a class="brd-rd40 no-bg" href="<?php $this->url_templet(); ?>" title="">PURCHASE NOW <i class="fa fa-angle-right brd-rd50"></i></a>
                                         <a class="brd-rd40" href="<?php $this->url_templet(); ?>" title="">APP READING <i class="fa fa-angle-right brd-rd50"></i></a>
                                     </div>
@@ -39,7 +44,7 @@
                             </div>
                             <div class="col-md-6 col-sm-12 col-lg-6">
                                 <div class="feat-mckp">
-                                    <img src="<?php $this->url_templet(); ?>images/resource/feat-mckp.png" alt="">
+                                    <img src="<?php $this->url_templet(); ?>images/icono_686x587alpha.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -582,4 +587,5 @@
                 </div>
             </div>
         </section>
-       
+
+        
