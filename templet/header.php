@@ -34,23 +34,40 @@
                         <div class="hdr-scl">
 
                            
-                            <a  
-                            href="<?php 
-                              $this->pnt('header_facebook_href', '#', ["secundario"=>"footer"] ); 
-                            ?>" class="brd-rd50 jmy_web_div"  id="header_faic_inicio" data-page="footer" data-editor="no"  >
-                            <?php $this->pnt('header_faic_inicio',
-                            '<i class="fa fa-facebook"></i>',
-                            ["secundario"=>"footer"]
-                            ); 
 
-                            
-                            ?></a>    
+                            <a href="<?php 
+                              $this->pnt( 'footer_disenadopor_href', '#', ["secundario"=>"header"] ); 
+                            ?>" title="" class="brd-rd50 disenado jmy_web_div" id="footer_disenadopor" data-page="header" data-editor="no"><!--<i class="fa fa-facebook"></i>--><?php 
+                              $this->pnt( 'footer_disenadopor',
+                                          ' <i class="fa fa-facebook"></i>',
+                                          ["secundario"=>"header"]
+                                          
+                                ); 
+                            ?></a> 
+
+                           
+                        </div>
+                        <div class="hdr-scl">
+
+                           
+
+                             <a href="<?php 
+                              $this->pnt( 'footer_disenadopor123_href', '#', ["secundario"=>"header"] ); 
+                            ?>" title="" class="brd-rd50 disenado jmy_web_div" id="footer_disenadopor123" data-page="header" data-editor="no"><!--<i class="fa fa-facebook"></i>--><?php 
+                              $this->pnt( 'footer_disenadopor123',
+                                          '<i class="fa fa-twitter"></i>',
+                                          ["secundario"=>"header"]
+                                          
+                                ); 
+                            ?></a>  
 
                             <?php /*<a class="brd-rd50 jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="" title=""><i class="fa fa-twitter"></i></a>
 
                             <a class="brd-rd50 jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="" title=""><i class="fa fa-google-plus"></i></a>
 
                             <a class="brd-rd50 jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="" title=""><?php $this->pnt('enlace_inicio','Inicio ',["secundario"=>"header"]); </a> */?>
+
+                           
                         </div>
                         <ul>
                             <li><a class="jmy_web_div" data-page="header" id="enlace_inicio" data-editor="no" href="#home" title=""><?php $this->pnt('enlace_inicio','Inicio ',["secundario"=>"header"]); ?></a></li>

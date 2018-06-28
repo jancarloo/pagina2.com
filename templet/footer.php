@@ -20,8 +20,16 @@
 		                      $this->pnt( 'footer_disenadopor',
 										  'Comsis',
 										  ["secundario"=>"footer"]
+
+
+
+                                          
 								); 
 							?></a>
+
+
+                                
+
                                     </div>
                                 </div>
                             </div>
