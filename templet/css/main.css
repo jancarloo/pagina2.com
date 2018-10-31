@@ -1244,14 +1244,14 @@ header.stcky .hdr-scl {margin-top: 10px;}
   width: 100%;
   background-position: center -25px;
   background-repeat: no-repeat;
-  padding: 109px 0 140px;
+  padding: 90px 0 140px;
   position: relative;
   z-index: 1;
 }
 .app-scrn-caro {
   float: left;
   width: 100%;
-  padding: 0 70px;
+  padding: 0 130px;
 }
 .app-itm {
   float: left;

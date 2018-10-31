@@ -26,9 +26,9 @@ define("IMG_RESIZING_WIDTH",900);	// Tamaño maximo de ancho a convertir, expesa
 define("IMG_RESIZING_HEIGHT",0);	// Tamaño maximo de alto a convertir, expesada en px
 
 /*Licencia JMY CONNECT*/
-define(	"JMY_SERVER","http://comsis.mx/app/update.php"); 
-define(	"JMY_KEY","8d7db37489d2aa7c76d739cac701d50a"); 
-define(	"JMY_SECRET_KEY","c15369bea0c32f7d6d66a4f886300e3e"); 
+define(	"JMY_SERVER","https://comsis.mx/api/auth/v1/jmyweb");
+define(	"JMY_API","994812de2c5b08cc1d587acdb9c7c7a4"); //API
+define(	"JMY_APIKEY","2b6002009dfea0e84d88add1e7192678"); //APIKEY
 /*Configuración JMY */
 define(	"DB_JMY_ADD_ID_D",true); //Agregar campos faltantes en la base de datos
 define(	"DB_JMY_ADD_TABLA",true); //Agregar Tablas faltantes en la base de datos
@@ -37,19 +37,8 @@ define(	"DB_HO","localhost"); //servidor
 define(	"DB_US","root"); //usuario
 define(	"DB_PA",""); //contrase�a
 define(	"DB_DB","pagina2"); //Base de datos
-
-
-/* Definiciones de correo */
-
-define( "MAIL_DEBUG",2 );
-define( "MAIL_HOST","comsis.online" );
-define( "MAIL_PORT",465 );
-define( "MAIL_SMTPAUTH",false );
-define( "MAIL_USER","test@comsis.online" );
-define( "MAIL_PASS","pruebasdetodo" );
-
-define( "MAIL_SETFROM_EMAIL","test@comsis.online" );
-define( "MAIL_SETFROM_NAME","Prueba de correo" );
+define(	"TABLAS_EXTRAS","productos"); //Base de datos
+define(	"TABLA_USUARIOS","clientes"); //Base de datos
 
 
 define(	"DB_PX",""); //prefijo de tablas en Base de datos //ACT

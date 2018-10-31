@@ -27,7 +27,7 @@
 	margin-top: -50px;
 }
 .app-scrn-caro {padding: 0;}
-.app-scrn-wrp {padding: 70px 0;background-position: center 0;}
+.app-scrn-wrp {top:280; padding: 70px 0;background-position: center 0;}
 .gp {padding: 70px 0;}
 .nws-inf > h4 {max-width: 100%;font-size: 16px;}
 .cont-wrp {width: 100%;margin-left: 0;}
@@ -66,7 +66,7 @@ main {padding-top: 0 !important;}
 .vdo-sec-innr > span > a::before {left: -25px;right: -25px;bottom: -25px;top: -25px;}
 .vdo-sec-innr > span > a::after {left: -50px;right: -50px;bottom: -50px;top: -50px;}
 .sec-tl-innr > h2 {font-size: 35px;}
-.app-scrn-wrp {background-image: none !important;padding: 0;}
+.app-scrn-wrp {top:90;background-image: none !important;padding: 80;}
 .app-itm > img,
 .owl-item.center .app-itm > img {
 	-webkit-transform: scale(1);
