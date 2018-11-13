@@ -604,8 +604,12 @@
                                     </div>
                                     <div class="col-md-7 col-sm-12 col-lg-7">
                                         <div class="amz-tl">
-                                            <h2>XAPO <i class="blue-clr">Amazing Features</i></h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur ili adipiscing Donec nec eros eget elit Donec nec eros eget adipiscing Ulimes gue ut eget…</p>
+                                            <h2 class="jmy_web_div" data-page="inicio" id="Xapo" data-editor="no">
+                                               <?php $this->pnt('Xapo',' XAPO <i class="blue-clr">Amazing Features</i>'); ?>
+                                              </h2>
+                                            <p class="jmy_web_div" data-page="inicio" id="Lorem" data-editor="no">
+                                            <?php $this->pnt('Lorem','Lorem ipsum dolor sit amet, consectetur ili adipiscing Donec nec eros eget elit Donec nec eros eget adipiscing Ulimes gue ut eget… '); ?>
+                                                </p>
                                         </div>
                                         <div class="fea-wrp">
                                             <div class="row">
@@ -613,8 +617,12 @@
                                                     <div class="fea-bx2">
                                                         <i class="ion-laptop blue-clr"></i>
                                                         <div class="fea-innr">
-                                                            <h5>HIGH RESOLUTION</h5>
-                                                            <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.</p>
+                                                            <h5 class="jmy_web_div" data-page="inicio" id="HIGH" data-editor="no">
+                                                            <?php $this->pnt('HIGH','HIGH RESOLUTION'); ?>
+                                                        </h5>
+                                                            <p class="jmy_web_div" data-page="inicio" id="ipsum" data-editor="no">
+                                                              <?php $this->pnt('ipsum','Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore. '); ?>
+                                                         </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -622,8 +630,12 @@
                                                     <div class="fea-bx2">
                                                         <i class="ion-settings blue-clr"></i>
                                                         <div class="fea-innr">
-                                                            <h5>ULTIMITED FEATURES</h5>
-                                                            <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.</p>
+                                                            <h5 class="jmy_web_div" data-page="inicio" id="ULTIMITED" data-editor="no">
+                                                             <?php $this->pnt('ULTIMITED','ULTIMITED FEATURES '); ?>
+                                                        </h5>
+                                                            <p class="jmy_web_div" data-page="inicio" id="dolor" data-editor="no">
+                                                              <?php $this->pnt('dolor','Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.'); ?>
+                                                                </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -631,8 +643,12 @@
                                                     <div class="fea-bx2">
                                                         <i class="ion-person-stalker blue-clr"></i>
                                                         <div class="fea-innr">
-                                                            <h5>FREE SUPPORT</h5>
-                                                            <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.</p>
+                                                            <h5 class="jmy_web_div" data-page="inicio" id="FREE" data-editor="no">
+                                                            <?php $this->pnt('FREE','FREE SUPPORT'); ?>
+                                                             </h5>
+                                                            <p class="jmy_web_div" data-page="inicio" id="sit" data-editor="no">
+                                                             <?php $this->pnt('sit',' Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore. '); ?>
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -640,8 +656,12 @@
                                                     <div class="fea-bx2">
                                                         <i class="ion-ios-list-outline blue-clr"></i>
                                                         <div class="fea-innr">
-                                                            <h5>CLEAN CODES</h5>
-                                                            <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.</p>
+                                                            <h5 class="jmy_web_div" data-page="inicio" id="CLEAN" data-editor="no">
+                                                               <?php $this->pnt('CLEAN','CLEAN CODES'); ?>
+                                                             </h5>
+                                                            <p class="jmy_web_div" data-page="inicio" id="amet" data-editor="no">
+                                                              <?php $this->pnt('amet','Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara incidid labore.'); ?>
+                                                                </p>
                                                         </div>
                                                     </div>
                                                 </div>
