@@ -732,7 +732,7 @@
 		                                                <?php  $va=[];	$va[] = [ "type"=>"imagen",
 				                                                                  "id"=>"Recent_img_1",
 				                                                                  "width"=>"370",
-                                                                                  "height"=>"261"
+                                                                                  "height"=>"261",
                                                                                   "url"=>$this->url_templet(["return"=>true]).'images/resource/rcnt-nws-img2.jpg'];  ?> 
 
                                                        data-var='<?php echo json_encode($va); ?>'>
