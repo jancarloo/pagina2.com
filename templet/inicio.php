@@ -600,7 +600,18 @@
                             <div class="amz-fea">
                                 <div class="row">
                                     <div class="col-md-5 col-sm-6 hidden-sm-down col-lg-5">
-                                        <div class="amz-mckp"><img src="<?php $this->url_templet(); ?>images/resource/amz-mckp1.png" alt="" /></div>
+                                        <div class="amz-mckp jmy_web_slider" id="amazing_img" data-tabla="vistaweb" data-page="inicio" data-marco="amazing_img" 
+		
+		                                    <?php  $va=[];	$va[] = [ "type"=>"imagen",
+				                                                        "id"=>"amazing_img_0",
+				                                                     "width"=>"690",
+			                                                        "height"=>"807",											              "url"=>$this->url_templet(["return"=>true]).'images/main-banner/1/fondoazul.jpg' ];  ?>  
+
+                                                data-var='<?php echo json_encode($va); ?>'>
+
+                                            <img height="807" width="690" alt="" title="" id="amazing_img_0" src="<?php                           $this->pnt('amazing_img_0',$this->url_templet(['return'=>true]).'images/resource/amz-mckp1.png'); ?>">
+
+                                        </div>
                                     </div>
                                     <div class="col-md-7 col-sm-12 col-lg-7">
                                         <div class="amz-tl">
