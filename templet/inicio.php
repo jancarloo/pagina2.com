@@ -755,8 +755,17 @@
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-lg-4">
                                         <div class="rcnt-nws text-center">
-                                            <div class="rcnt-thmb">
-                                                <a href="<?php $this->url_templet(); ?>blog-detail.html" title=""><img src="<?php $this->url_templet(); ?>images/resource/rcnt-nws-img3.jpg" alt=""></a>
+                                            <div class="rcnt-thmb jmy_web_slider" id="R_new_img" data-tabla="vistaweb" data-page="inicio" data-marco="R_new_img" 	
+		                                                          <?php  $va=[];	$va[] = [ "type"=>"imagen",
+				                                                                                     "id"=>"R_new_img_0",
+				                                                                                     "width"=>"370",
+			                                                                                         "height"=>"261",											                                           "url"=>$this->url_templet(["return"=>true]).'images/main-banner/1/fondoazul.jpg' ];  ?>  
+                                                                    data-var='<?php echo json_encode($va); ?>'>
+
+                                                <img width="370" height="261"  alt="" title="" id="R_new_img_0"
+                                                src="<?php  $this->pnt('R_new_img_0',$this->url_templet(['return'=>true]).'images/resource/rcnt-nws-img3.jpg'); ?>">
+
+                                                
                                             </div>
                                             <div class="nws-inf">
                                                 <div class="mta">
