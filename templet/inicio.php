@@ -727,11 +727,6 @@
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-lg-4">
                                         <div class="rcnt-nws text-center">
-<<<<<<< HEAD
-                                            <div class="rcnt-thmb">
-                                                <a href="<?php $this->url_templet(); ?>blog-detail.html" title=""><img src="<?php $this->url_templet(); ?>images/resource/rcnt-nws-img2.jpg" alt=""></a>
-                                            </div>
-=======
                                             <div class="rcnt-thmb jmy_web_slider" id="Recent_img" data-tabla="vistaweb" data-page="inicio" data-marco="Recent_img"
 		
 		                                                <?php  $va=[];	$va[] = [ "type"=>"imagen",
@@ -748,7 +743,6 @@
                                                         </div>
 
                                                
->>>>>>> 636f4272b25a550ed1964d70023d2ed93f52f5bc
                                             <div class="nws-inf">
                                                 <div class="mta">
                                                     <span>8 Comments</span>
