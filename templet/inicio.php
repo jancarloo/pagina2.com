@@ -526,11 +526,60 @@
                                     <i class="tl-shp"><i class="tl-shp-inr"></i></i>
                                 </div>
                             </div>
+
+
                             <div class="rmv-ext">
-                                <div class="row">
+                                <div class="jmy_web_contador" data-page="inicio" id="numero_carrusel_nuestros" data-value="<?php $this->pnt('numero_carrusel_nuestros','3'); ?>" data-titulo="Inica el número de páginas a mostrar">
+                                </div>
+
+                                
+
+<!-- esto es el cuadro que contiene texto, h4 e imagen -->
+                                    
+                                <div class="row">        
+<!-- aquí comienza el for o ciclo de repetición -->
+                                        <?php 
+                                            $paginas =$paginas+1;
+                                             $paginas = $this->pnt('numero_carrusel_nuestros','3',["return"=>true]); 
+                                            //echo $paginas;
+                                            $resultado = $paginas%3;
+                                            echo "<br>";
+                                            $paginas =$paginas+1;                                            
+                                            if ($resultado != 0){
+                                                echo ' '; 
+                                            }
+                                             $contador = 0;
+                                                for($i=1;$i<$paginas;$i++){ ?>
+<!-- aquí se corta el for o ciclo de repetición para repetir lo que esta adelante -->
+
+
                                     <div class="col-md-4 col-sm-6 col-lg-4">
-                                        <div class="membr-wrp text-center">
-                                            <div class="membr-innr">
+
+<!-- variables a guardar e imprimir --><div class="membr-wrp text-center  jmy_web_slider" id="nuestros_asesores_img<?php echo $i; ?>"                                                   data-tabla="vistaweb" data-page="inicio" data-marco="works-container"  
+                
+                                        <?php  $var=[];/* $var[] = [ "type"=>"imagen",
+                                                                "id"=>"nuestros_asesores_i".$i."_imagen",
+                                                                "width"=>"460",
+                                                                    "height"=>"436",
+                                                                    "url"=>$this->url_templet(["return"=>true])."images/resource/fea-icn".$i.".png"];*/
+                                                        $var[] = [ "type"=>"text",
+                                                                    "id"=>"nuestros_asesores_i".$i."_imagen2",
+                                                                    "placeholder"=>"Selecione del 1 al 7",
+                                                                    "value"=>$this->pnt("nuestros_asesores_i".$i."_imagen2","",["return"=>true])
+                                                                    ]; 
+                                                        $var[] =["type"=>"text",
+                                                                "id"=>"nuestros_asesores".$i."_titulo",
+                                                                "value"=>$this->pnt("nuestros_asesores".$i."_titulo","",["return"=>true]),
+                                                                    "placeholder"=>"TituloH3"];
+                                                        $var[] =    ["type"=>"text",
+                                                                "id"=>"nuestros_asesores".$i."_text",
+                                                                "value"=>$this->pnt("nuestros_asesores".$i."_text","",["return"=>true]),
+                                                                    "placeholder"=>"parrafo"];
+                                                        ?>  data-var='<?php echo json_encode($var); ?>'>  <!-- variables a guardar e imprimir -->
+
+
+
+                 <!-- esto se repetira -->  <div class="membr-innr">
                                                 <img src="<?php $this->url_templet(); ?>images/resource/member1.jpg" alt="" />
                                                 <div class="membr-inf">
                                                     <h4><a href="<?php $this->url_templet(); ?>team-detail.html" title="">QLARK WILLIMES</a></h4>
@@ -543,48 +592,25 @@
                                                     </div>
                                                     <p>Lorem ipsum dolor uIL sit am pellen erat Maecenas cenasgue ut eget secte pellentesque…</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6 col-lg-4">
-                                        <div class="membr-wrp text-center">
-                                            <div class="membr-innr">
-                                                <img src="<?php $this->url_templet(); ?>images/resource/member2.jpg" alt="" />
-                                                <div class="membr-inf">
-                                                    <h4><a href="<?php $this->url_templet(); ?>team-detail.html" title="">WILLIMES JOHN</a></h4>
-                                                    <span class="blue-clr">Co-Founder</span>
-                                                    <div class="scl-inf">
-                                                        <a href="<?php $this->url_templet(); ?>" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                                                        <a href="<?php $this->url_templet(); ?>" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                                                        <a href="<?php $this->url_templet(); ?>" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a>
-                                                        <a href="<?php $this->url_templet(); ?>" title="Vimeo" target="_blank"><i class="fa fa-vimeo"></i></a>
-                                                    </div>
-                                                    <p>Lorem ipsum dolor uIL sit am pellen erat Maecenas cenasgue ut eget secte pellentesque…</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6 col-lg-4">
-                                        <div class="membr-wrp text-center">
-                                            <div class="membr-innr">
-                                                <img src="<?php $this->url_templet(); ?>images/resource/member3.jpg" alt="" />
-                                                <div class="membr-inf">
-                                                    <h4><a href="<?php $this->url_templet(); ?>team-detail.html" title="">DOMINUS WATSON</a></h4>
-                                                    <span class="blue-clr">Co-Founder</span>
-                                                    <div class="scl-inf">
-                                                        <a href="<?php $this->url_templet(); ?>" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                                                        <a href="<?php $this->url_templet(); ?>" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                                                        <a href="<?php $this->url_templet(); ?>" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a>
-                                                        <a href="<?php $this->url_templet(); ?>" title="Vimeo" target="_blank"><i class="fa fa-vimeo"></i></a>
-                                                    </div>
-                                                    <p>Lorem ipsum dolor uIL sit am pellen erat Maecenas cenasgue ut eget secte pellentesque…</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- cierre de esto se repetira --> </div>
+
+
+                                        </div> <!--cierre de variables a guardar e imprimir -->
+                                    </div><!--cierre de col-md-4 col-sm-6 col-lg-4 -->
+
+                                        <?php }  if ($resultado != 0){
+                                                echo ' '; 
+                                            } ?>  <!-- cierre de for -->                                    
+                                </div><!-- cierre de row -->
+
+
+                                
+                            </div><!-- cierre de rmv-ext -->
+
+
+
                             <div class="vw-al text-center"><a class="brd-rd40" href="<?php $this->url_templet(); ?>team.html" title="">VIEW ALL TEAM <i class="fa fa-angle-right brd-rd50"></i></a></div>
+                            
                         </div>
                     </div>
                 </div>
