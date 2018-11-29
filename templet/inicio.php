@@ -510,7 +510,7 @@
                 </div>
             </div>
         </section>
-        <section id="team">
+     <?php /*   <section id="team">
             <div class="gp bp175">
                 <div class="container">
                     <div class="row">
@@ -557,11 +557,7 @@
 
 <!-- variables a guardar e imprimir --><div class="membr-wrp text-center  jmy_web_slider" id="nuestros_asesores_img<?php echo $i; ?>"                                                   data-tabla="vistaweb" data-page="inicio" data-marco="works-container"  
                 
-                                        <?php  $var=[];/* $var[] = [ "type"=>"imagen",
-                                                                "id"=>"nuestros_asesores_i".$i."_imagen",
-                                                                "width"=>"460",
-                                                                    "height"=>"436",
-                                                                    "url"=>$this->url_templet(["return"=>true])."images/resource/fea-icn".$i.".png"];*/
+                                        
                                                         $var[] = [ "type"=>"text",
                                                                     "id"=>"nuestros_asesores_i".$i."_imagen2",
                                                                     "placeholder"=>"Selecione del 1 al 7",
@@ -615,10 +611,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>*/ ?>
+         <section id="team">
+            <div class="">
+           
+            </div>
+        </section>            
         <section id="features">
             <div class="gp gry-lyr hg-opc">
-                <div class="skw-shp-tp lft"></div>
+                <div class="skw-shp-tp lft"></div> </br> </br> </br>
                 <div class="parlx" style="background-image: url(images/parlx-bg1.jpg);"></div>
                 <div class="container">
                     <div class="row">
@@ -712,7 +713,7 @@
                 </div>
             </div>
         </section>
-        <section id="news">
+    <?php /*    <section id="news">
             <div class="gp">
                 <div class="container">
                     <div class="row">
@@ -845,7 +846,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>*/?>
         <section id="contact">
             <div class="gp nogp">
                 <div class="row">
